@@ -1,0 +1,59 @@
+
+{
+  "language": "p4-16",
+  "targets": {
+    "multiswitch": {
+      "auto-control-plane": true,
+      "cli": true,
+      "pcap_dump": true,
+      "bmv2_log": true,
+      "links": [["h1", "s1"],["h2", "s2"],["h3", "s3"],["h4", "s4"],["h5", "s5"],["h6", "s6"],["h7", "s7"],["h8", "s8"],["s1", "s5"],["s1", "s6"],["s1", "s7"],["s1", "s8"],["s2", "s5"],["s2", "s6"],["s2", "s7"],["s2", "s8"],["s3", "s5"],["s3", "s6"],["s3", "s7"],["s3", "s8"],["s4", "s5"],["s4", "s6"],["s4", "s7"],["s4", "s8"]],
+      "hosts": {
+        "h1": {},
+        "h2": {},
+        "h3": {},
+        "h4": {},
+        "h5": {},
+        "h6": {},
+        "h7": {},
+        "h8": {}
+      },
+      "switches": {
+        "s1": {
+          "entries": "s1-commands.txt" 
+        },
+        "s2": {
+          "entries": "s2-commands.txt" 
+        },
+        "s3": {
+          "entries": "s3-commands.txt" 
+        },
+        "s4": {
+          "entries": "s4-commands.txt" 
+        },
+        "s5": {
+          "entries": "s5-commands.txt" 
+        },
+        "s6": {
+          "entries": "s6-commands.txt" 
+        },
+        "s7": {
+          "entries": "s7-commands.txt" 
+        },
+        "s8": {
+          "entries": "s8-commands.txt" 
+        }
+      },
+      "configs": {
+        "s5": "hashBucketMillisec.p4",
+        "s6": "hashBucketMillisec.p4",
+        "s7": "hashBucketMillisec.p4",
+        "s8": "hashBucketMillisec.p4",
+        "s1": "hashBucketMillisec.p4",
+        "s2": "hashBucketMillisec.p4",
+        "s3": "hashBucketMillisec.p4",
+        "s4": "hashBucketMillisec.p4"
+      }
+    }
+  }
+}
